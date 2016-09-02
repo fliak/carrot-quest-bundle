@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "veksa/carrot-api": "dev-add-event-tracking"
+        "veksa/carrot-api": "dev-master"
     },
     "license": "MIT",
     "authors": [
