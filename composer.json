@@ -1,0 +1,24 @@
+{
+    "name": "talaka/carrot-quest-bundle",
+    "description": "Integrate veksa/carrot-api to Symfony2",
+    "type": "library",
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "https://github.com/Talaka-by/carrot-api.git"
+        }
+    ],
+    "require": {
+        "veksa/carrot-api": "dev-add-event-tracking"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "George Novik",
+            "email": "grgnvk@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Talaka\\CarrotQuestBundle\\": "" }
+    }
+}
