@@ -1,6 +1,6 @@
 <?php
 
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+namespace Talaka\CarrotQuestBundle\DependencyInjection;
 
 
 use Symfony\Component\DependencyInjection\Container;
