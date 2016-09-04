@@ -6,9 +6,17 @@
 
     <services>
 
-        <service id="carrot_quest_api" class="Veksa\Carrot\Api">
+        <service id="carrot_quest_api_raw" class="Veksa\Carrot\Api" public="false">
             <argument>%carrotquest.app_id%</argument>
             <argument>%carrotquest.auth_token%</argument>
+        </service>
+
+        <service id="carrot_quest_api" class="Talaka\CarrotQuestBundle\Service\ApiWrapper">
+            <argument type="service" id="carrot_quest_api_raw" />
+
+            <call method="setLogger">
+                <argument type="service" id="logger" />
+            </call>
         </service>
 
     </services>
